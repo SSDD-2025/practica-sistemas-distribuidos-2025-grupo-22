@@ -1,0 +1,16 @@
+
+{{>header}}
+
+<div class="container">
+    <h2>Decks</h2>
+
+    <ul class="items">
+        {{#decks}}
+        <li><a href="/decks/{{id}}">{{name}}</a></li>
+        {{/decks}}
+    </ul>
+
+    <button class="btn btn-primary" onclick="location.href='/newdeck'">New deck</button>
+</div>
+
+{{>footer}}
